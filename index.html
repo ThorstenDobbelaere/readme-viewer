@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme Viewer</title>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+    />
+    <script src="frontend/onLoad.js" defer></script>
+</head>
+<body>
+<h1>Read File in Electron</h1>
+<input type="file" id="fileInput">
+<button id="readBtn">Read File</button>
+<pre id="output"></pre>
+</body>
+</html>
